@@ -69,9 +69,8 @@ git add --chmod=+x -- tools\aaw\flash.sh
 git add --chmod=+x -- tools\aaw\rkdownload.sh
 git add --chmod=+x -- tools\aaw\upgrade_tool
 
-git commit -m "Make file executable"
 
 git submodule add https://github.com/buildroot/buildroot
-git commit -a -m 'Initial commit'
+git commit -a -m "Make file executable"
 git push https://mail%40yahoo.com:key@github.com/FlorinBD/rpi_radxa_buildroot.git main
 ```
