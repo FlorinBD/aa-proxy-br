@@ -23,6 +23,7 @@ jobs:
         with:
           repository: FlorinBD/aa-mirror-rs
           token: ${{ secrets.RAT }}
+          path: '/app/buildroot/dl/aa-mirror-rs'
 
       - name: Delete huge unnecessary tools folder
         run: rm -rf /opt/hostedtoolcache
