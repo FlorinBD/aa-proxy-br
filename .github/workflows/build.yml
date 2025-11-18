@@ -18,13 +18,6 @@ jobs:
         board: [radxa03w]
 
     steps:
-      - name: Clone aa-mirror-rs
-        env:
-          RAT: ${{ secrets.RAT }}
-        run: |
-            echo "Secrets: " >> "$RAT"
-            git clone https://florin_fieni%40yahoo.com:${{ secrets.RAT }}@github.com/FlorinBD/aa-mirror-rs.git
-
       - name: Delete huge unnecessary tools folder
         run: rm -rf /opt/hostedtoolcache
       - name: Checkout
